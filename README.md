@@ -20,7 +20,7 @@ The scope of the project includes:
 
 ## Conclusion
 
-The Salary Predictor model successfully provides an estimated salary based on the input features. In the future, improvements could involve using datasets with additional features such as quantification of work impact and performance scores. Additionally, exploring alternative machine learning algorithms like random forest could potentially enhance prediction accuracy.
+The Salary Predictor model successfully provides an estimated salary based on the input features and achieves an accuracy of 88%. In the future, improvements could involve using datasets with additional features such as quantification of work impact and performance scores. Additionally, exploring alternative machine learning algorithms like random forest could potentially enhance prediction accuracy.
 
 ## Outputs
 ![image](https://github.com/manans791/Salary-Prediction/assets/56390676/1614578b-01d7-4a82-baa7-cc3d13a1a150)

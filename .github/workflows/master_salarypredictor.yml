@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - SalaryPredictor
+name: Build and deploy Python app to Azure Web App - salarypredictor
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python version
         uses: actions/setup-python@v1
         with:
-          python-version: '3.11'
+          python-version: '3.10'
 
       - name: Create and start virtual environment
         run: |
@@ -65,14 +65,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_6F3B7279D6EB45ED87409FBA939795D7 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_FA9F49CD318640A985385C620AA6AC12 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_89DC60A82BF74B6C91CD2B04DDED9256 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_30426A162B48488BAF8C0868DB3E2CBA }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_1CB8B8C54ECF47C1BCA6FA6C70552F73 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_FA986C5005CC419AABC3340D44A95F7F }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'SalaryPredictor'
+          app-name: 'salarypredictor'
           slot-name: 'Production'
           
